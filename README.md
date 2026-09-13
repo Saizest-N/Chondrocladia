@@ -5,6 +5,8 @@ A quiet deep-sea observation game featuring carnivorous Chondrocladia sponges.
 深海の定点観測カメラを切り替えながら、肉食性カイメン
 **Chondrocladia属**を静かに眺める、小規模な観賞用ゲームです。
 
+<img width="3190" height="1865" alt="スクリーンショット 2026-09-13 205505" src="https://github.com/user-attachments/assets/aba8bb7f-f5f2-4835-934e-8381052c5058" />
+
 スコア、ゲームオーバー、達成目標などはありません。
 
 **「何も起きなくても正解」**
