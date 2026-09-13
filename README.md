@@ -37,6 +37,7 @@ A quiet deep-sea observation game featuring carnivorous Chondrocladia sponges.
 ## Download
 
 最新版は **Releases** からダウンロードしてください。
+https://github.com/Saizest-N/Chondrocladia/releases/tag/v1.0.0
 
 ## Web version
 
