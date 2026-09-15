@@ -1,0 +1,12 @@
+Chondrocladia Distribution License
+
+Copyright (c) 2026 Saizest-N. All rights reserved.
+
+本ソフトウェアは、個人による非営利目的の閲覧・実行に限り利用できます。
+著作権者の事前の書面による許可なく、本ソフトウェアまたはその一部を
+再配布、改変、転載、販売、商用利用することはできません。
+
+本ソフトウェアは「現状有姿」で提供されます。作者は、本ソフトウェアの
+利用によって生じたいかなる損害についても責任を負いません。
+
+公式配布元: https://github.com/Saizest-N

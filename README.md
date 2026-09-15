@@ -1,70 +1,60 @@
-# Chondrocladia
+Chondrocladia — Web / Smartphone版
+========================================
 
-A quiet deep-sea observation game featuring carnivorous Chondrocladia sponges.
+概要
+----
+世界各地の深海定点観測カメラを切り替えながら、肉食性カイメン
+Chondrocladia属を静かに眺める、小規模な観賞用ブラウザゲームです。
+スコアやゲームオーバーはありません。「何も起きなくても正解」です。
 
-深海の定点観測カメラを切り替えながら、肉食性カイメン
-**Chondrocladia属**を静かに眺める、小規模な観賞用ゲームです。
+対応環境
+--------
+- 最新版 Google Chrome
+- 最新版 Microsoft Edge
+- iPhone Safari / Chrome（横画面）
+- Android Chrome（横画面）
+- Windows 11 64bit
+- 1920×1080基準。ウィンドウサイズ変更および4K表示に対応します
 
-<img width="3190" height="1865" alt="スクリーンショット 2026-09-13 205505" src="https://github.com/user-attachments/assets/aba8bb7f-f5f2-4835-934e-8381052c5058" />
+起動方法
+--------
+公開URLをChrome、Edge、またはSafariで開きます。
+スマートフォンでは横画面での表示を推奨します。
+SOUNDは初期状態でOFFです。音を出す場合は右下のスピーカーを押します。
 
-スコア、ゲームオーバー、達成目標などはありません。
+操作方法
+--------
+- CAM 01～05        : 観測地点とカイメンを切り替えます
+- LIGHT              : 観測ライトをON/OFFします
+- CURRENT            : 海流をLOW / MID / HIGHで切り替えます
+- FEED               : 小型の餌を流します。捕まらない場合もあります
+- スピーカー         : 環境音をON/OFFします
+- スピーカーにカーソルを合わせる : 音量スライダーを表示します
+- スマートフォンではスピーカーをタップ : 音量スライダーを一時表示します
 
-**「何も起きなくても正解」**
-
-をコンセプトにしています。
-
-## Features
-
-- 3種類のChondrocladiaを観測
-- 3か所の深海観測地点を切り替え
-- LIGHT ON / OFF
-- CURRENT LOW / MID / HIGH
-- FEEDで小型の餌を流す
-- マリンスノー
-- ごく稀に背景を通過する深海生物
-- 環境音 ON / OFF
-- 音量調整
-- Local Time / Site Time表示
-- 4K表示・ウィンドウサイズ変更対応
-
-## Included versions
-
-配布ZIPには以下を同梱しています。
-
-- Web版
-- Windowsアプリ版
-
-## Download
-
-最新版は **Releases** からダウンロードしてください。
-https://github.com/Saizest-N/Chondrocladia/releases/tag/v1.0.0
-
-## Web version
-
-最新版のGoogle Chrome / Microsoft Edgeを主な対象としています。
-
-`index.html` を開くだけで起動できます。
-
-## Windows version
-
-Windows 11 64bitを主な対象としています。
-
-Windows版は個人制作のためデジタル署名を行っていません。  
-Windows SmartScreen等で警告が表示される場合があります。
-
-## Controls
-
-- `CAM 01 / 02 / 03` : 観測地点の切り替え
-- `LIGHT` : 観測ライト ON / OFF
-- `CURRENT` : 海流 LOW / MID / HIGH
-- `FEED` : 小型の餌を流す
-- スピーカー : 環境音 ON / OFF
-- スピーカーにカーソルを合わせる : 音量調整
-
-## Offline
-
+オフライン動作
+--------------
 外部通信、CDN、外部API、外部フォント、外部画像は使用していません。
+Site Timeはブラウザ標準の日時機能だけで計算されます。
 
-## Author
+既知の制限事項
+--------------
+- ブラウザの自動再生制限により、音は必ずユーザー操作後に開始します。
+- SOUNDの初期状態はOFFです。
+- 古いブラウザや特殊なセキュリティ設定では動作しない場合があります。
+- 表示品質と粒子数には、高解像度環境で負荷が増えすぎないための上限があります。
+- Firefox等は主な動作確認対象ではありません。
 
-**Saizest-N**
+参考資料について
+----------------
+形態・シルエット・質感の理解には、制作時に提供された実写参考資料を使用しています。
+参考写真そのものは本配布物に含まず、ゲーム内表現はオリジナルの軽量な2D描画です。
+
+作者／配布元
+------------
+作者名  : Saizest-N
+配布元  : https://github.com/Saizest-N
+
+Web版であること
+----------------
+本公開物はWeb版です。インストール、セーブデータ、常駐処理はありません。

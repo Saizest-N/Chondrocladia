@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#02070d">
+  <meta name="description" content="A quiet deep-sea observation experience.">
+  <title>Chondrocladia</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2302070d'/%3E%3Cpath d='M16 26V10M16 13l-7-5M16 13l7-5M9 8v8M23 8v8' stroke='%23d9f6ff' stroke-width='1.4' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='9' cy='7' r='2' fill='%238bd8e9' fill-opacity='.8'/%3E%3Ccircle cx='23' cy='7' r='2' fill='%238bd8e9' fill-opacity='.8'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="observation" aria-label="Deep-sea observation camera">
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="water-glass" aria-hidden="true"></div>
+
+    <section class="telemetry" aria-label="Observation data">
+      <p class="eyebrow">CHONDROCLADIA</p>
+      <h1><span id="cam-title">CAM 01</span> <span class="dash">—</span> <i id="species">C. lyra</i></h1>
+      <dl>
+        <div><dt>Location</dt><dd id="location">Northern California Margin</dd></div>
+        <div><dt>Depth</dt><dd id="depth">3,400 m</dd></div>
+        <div><dt>Temperature</dt><dd id="temperature">1.8°C</dd></div>
+        <div><dt>Current</dt><dd><span id="current-value">0.08 m/s</span><span class="current-mark" aria-hidden="true">↗</span></dd></div>
+      </dl>
+      <div class="clock-grid">
+        <span>Local Time</span><time id="local-time">--:--:--</time><b id="local-zone">LOCAL</b>
+        <span>Site Time</span><time id="site-time">--:--:--</time><b id="site-zone">PT</b>
+      </div>
+    </section>
+
+    <div id="signal" class="signal" role="status" aria-live="polite"></div>
+
+    <nav class="controls" aria-label="Observation controls">
+      <div class="control-group camera-group" aria-label="Camera selection">
+        <span class="control-label">CAM</span>
+        <button type="button" class="cam-button active" data-camera="0" aria-pressed="true">01</button>
+        <button type="button" class="cam-button" data-camera="1" aria-pressed="false">02</button>
+        <button type="button" class="cam-button" data-camera="2" aria-pressed="false">03</button>
+        <button type="button" class="cam-button" data-camera="3" aria-pressed="false">04</button>
+        <button type="button" class="cam-button" data-camera="4" aria-pressed="false">05</button>
+      </div>
+      <button type="button" id="light-button" class="wide-button" aria-pressed="true"><span>LIGHT</span><b>ON</b></button>
+      <button type="button" id="current-button" class="wide-button"><span>CURRENT</span><b>MID</b></button>
+      <button type="button" id="feed-button" class="feed-button"><span class="feed-icon" aria-hidden="true">⌁</span><b>FEED</b></button>
+      <div class="sound-control">
+        <label id="volume-control" class="volume-control" for="volume-slider">
+          <span>VOL</span>
+          <input id="volume-slider" type="range" min="0" max="100" value="60" step="1" aria-label="Sound volume" aria-valuetext="60%">
+        </label>
+        <button type="button" id="sound-button" class="icon-button" aria-label="Sound off" aria-pressed="false" aria-controls="volume-control" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path class="sound-wave" d="M16 9.2a4 4 0 0 1 0 5.6M18.6 6.5a8 8 0 0 1 0 11"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <p class="quiet-note">OBSERVATION LINK <span class="link-dot" aria-hidden="true"></span> <b id="link-state">STABLE</b></p>
+
+    <aside class="orientation-notice" role="status" aria-live="polite">
+      <span class="rotate-mark" aria-hidden="true"><i></i></span>
+      <p>LANDSCAPE VIEW RECOMMENDED</p>
+      <span>横画面での表示を推奨します</span>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
